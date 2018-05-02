@@ -1,0 +1,21 @@
+
+"+" = function(x,y) {
+  if(is.character(x) and is.character(y)) {
+    return(paste(x , y, sep=""))
+  } else {
+    .Primitive("+")(x,y)
+  }
+}
+
+Courserapath<- getwd() 
+
+Courserapath<-Courserapath + "/Desktop/Nik/Coursera R/Week4/hospital-data.csv"
+Courserapath
+
+Nikframe<- read.csv(Courserapath,header = TRUE)
+head(Nikframe)
+Nikframe<- read.csv(Courserapath,header = TRUE)
+head(Nikframe)
+
+ncol(Nikframe)
+names(Nikframe)
